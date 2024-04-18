@@ -38,7 +38,7 @@ export default function Header({
 			</h1>
 			<div className="flex gap-4">
 				<button
-					className="border-2 border-slate-600 text-slate-600 p-2 rounded-md font-semibold hover:bg-slate-300"
+					className="border-2 border-slate-600 text-slate-600 p-2 rounded-md font-semibold bg-slate-200 hover:bg-slate-300"
 					onClick={handleClick}
 				>
 					+ New Note

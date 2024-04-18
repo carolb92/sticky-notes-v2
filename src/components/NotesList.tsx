@@ -29,7 +29,7 @@ export default function NotesList({
 	// setNotes(notesMatchingSearch);
 
 	return (
-		<div className="w-full flex flex-wrap gap-4">
+		<div className="w-full flex flex-wrap gap-4 max-lg:justify-center">
 			{filteredNotes.map((note) => (
 				<Note
 					key={note.id}

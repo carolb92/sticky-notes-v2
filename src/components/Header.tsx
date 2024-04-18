@@ -32,7 +32,7 @@ export default function Header({
 	}
 
 	return (
-		<div>
+		<div className="max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center">
 			<h1 className="font-semibold text-4xl mb-4 text-slate-700">
 				Sticky Notes
 			</h1>

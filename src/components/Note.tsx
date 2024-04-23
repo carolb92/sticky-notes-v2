@@ -36,11 +36,11 @@ export default function Note({
 			return prevNotes.filter((note) => note.id !== id);
 		});
 	}
-
+	// TODO: add a custom font size to text input and text area
 	return (
 		<div className="flex flex-col border-2 border-slate-300 w-60 rounded-md relative">
 			<span
-				className="absolute top-1 right-2 font-mynerve text-slate-400 cursor-pointer"
+				className="absolute top-1 right-2 font-shantell text-lg text-slate-400 cursor-pointer"
 				onClick={handleDelete}
 			>
 				X
@@ -49,16 +49,16 @@ export default function Note({
 				type="text"
 				placeholder="Title"
 				name="title"
-				className={`p-2 border-b border-slate-300 text-lg focus:outline-none font-mynerve ${bgColor}`}
+				className={`p-2 border-b border-slate-300 text-lg focus:outline-none font-shantell ${bgColor}`}
 				value={title}
 				onChange={handleChange}
 			/>
 			<textarea
 				name="description"
-				// cols={26}
+				cols={30}
 				rows={6}
 				placeholder={"Description"}
-				className={`p-2 focus:outline-none font-mynerve text-lg ${bgColor}`}
+				className={`p-2 focus:outline-none font-shantell text-lg ${bgColor}`}
 				// bg-yellow-100
 				value={description}
 				onChange={handleChange}
